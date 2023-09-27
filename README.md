@@ -103,11 +103,11 @@ The game can be played with a computer opponent; it is a multiplayer game with p
  | Serial No            | Feature                                                              |
 | ----------------- | ------------------------------------------------------------------ |
 | 1 | User signup and Login |
-| 2 | Home Page , Multiplayer Accessibility |
-| 3 | Gameboard Page ,live Chat |
-| 4 | LeaderBoard  Page ,Impressive UI|
-| 5 | navbar,footer,completely Responsive |
-| 6 | demo video , about game and rules  |
+| 2 | Home Page, Multiplayer Accessibility |
+| 3 | Gameboard Page,live Chat |
+| 4 | LeaderBoard  Page , Impressive UI|
+| 5 | navbar,footer, completely Responsive |
+| 6 | demo video, about game and rules  |
 
 ---
 # Package.json(Dependency)✨:-
