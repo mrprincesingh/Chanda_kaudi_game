@@ -50,7 +50,6 @@ export default function Navbar(props: Props) {
   const state: stateType = useSelector((state: any) => state.AuthManager);
   const { isAuth } = state;
   const { colorMode, toggleColorMode } = useColorMode();
-  // const { isOpen, onOpen, onClose } = useDisclosure();
   const navigate = useNavigate();
 
   const handleLogout=()=> {
@@ -59,7 +58,7 @@ export default function Navbar(props: Props) {
   }
  
 const value = JSON.parse(localStorage.getItem('userloggedin')as string)|| "email"
- console.log(value.length)
+
 
   return (
     <>
@@ -75,10 +74,10 @@ const value = JSON.parse(localStorage.getItem('userloggedin')as string)|| "email
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
 
-            <Link to = "/signup"><Button colorScheme='red'  >
-                 Signup
-                 
-            </Button></Link>
+       {value?.email ? null : <Link to = "/signup"><Button colorScheme='red'  >
+                 Signup 
+            </Button></Link>}
+           
 
 
               <Button onClick={toggleColorMode}>
